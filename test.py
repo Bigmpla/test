@@ -134,22 +134,6 @@ def ascii2hex(a):
         h += hex(ord(i))[2:]
     return h
 
-# hex to ascii
-def hex2ascii(h):
-    a = ""
-    for i in range(0, len(h), 2):
-        a += chr(int(h[i:i+2], 16))
-    return a
-
-# 用于计算m^e = c(modn) 和 c^d = m(modn)
-def MODs(m, n, e):
-    res = 1
-    while e:
-        if e & 1:
-            res = (res * m) % n
-        m = (m * m) % n
-        e >>= 1
-    return res
 
 if __name__ == "__main__":
     e, d, n = get_key()         # 生成公钥、密钥 长度为1024位
