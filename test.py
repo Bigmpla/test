@@ -13,7 +13,9 @@ RSA密钥至少为500位长，一般推荐使用1024位。这就使加密的计�
 5. 将p和q的记录销毁。
 
 (N,e)是公钥，(N,d)是私钥。
-aaaaaaaaaaaaaaahhhhhh
+
+solve  conflict!
+
 +加密，解密
 '''
 import random
